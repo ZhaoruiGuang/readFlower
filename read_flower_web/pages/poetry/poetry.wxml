@@ -1,0 +1,14 @@
+<view class="content">
+    <image class='img' src="../images/flower.jpg"></image>
+    <text class='title'>野花</text>
+    <text class='poetry'>一朵野花，</text>
+    <text class='poetry'>在荒原里开了又落了，</text>
+    <text class='poetry'>不想到这小生命，向着太阳发笑，</text>
+    <text class='poetry'>上帝给它的聪明，它自己知道，</text>
+    <text class='poetry'>它的欢喜，它的诗，在风前轻摇。</text>
+    <text class='poetry paragraph2'>一朵野花，</text>
+    <text class='poetry'>在荒原里开了又落了，</text>
+    <text class='poetry'>它看见青天，看不见自己的藐小，</text>
+    <text class='poetry'>听惯风的温柔，听惯风的怒号，</text>
+    <text class='poetry'>就连它自己的梦也容易忘掉。</text>
+</view>

@@ -1,0 +1,164 @@
+.userinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.userinfo-avatar {
+    width: 128rpx;
+    height: 128rpx;
+    margin: 20rpx 20rpx 30rpx;
+    border-radius: 50%;
+}
+.userinfo-nickname {
+    font-size: 32rpx;
+    color: #333333;
+}
+.tip{
+    font-size: 28rpx;
+    color:#999999;
+    margin-top: 45rpx;
+    margin-bottom: 85rpx;
+}
+.pointBox{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.points{
+  width: 220rpx;
+  height: 250rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-radius: 5rpx;
+}
+.pointIn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.typeCircle{
+  width: 86rpx;
+  height: 86rpx;
+  border-radius: 100%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30rpx;
+}
+/* .flowerCircle{
+  background-color: #f2cfd3;
+} */
+/* .flower{
+  width: 41rpx;
+  height: 49rpx;
+}
+.flowerPoint{
+  background-color:#f2cfd3;
+  box-shadow: 4rpx 4rpx 8rpx #f3e0e2;
+  color: #fff;
+} */
+.logoCircle{
+  background-color: #f2cfd3;
+}
+.logo{
+  width: 51rpx;
+  height: 51rpx;
+}
+.logoPoint{
+  background-color:#f2cfd3;
+  box-shadow: 4rpx 4rpx 8rpx #f3e0e2;
+  color: #fff;
+}
+.fruitCircle{
+  background-color: #9edeaf;
+}
+.fruit{
+  width: 47rpx;
+  height: 57rpx;
+}
+.fruitPoint{
+  background-color:#9edeaf;
+  box-shadow: 4rpx 4rpx 8rpx #cce6d3;
+  color: #fff;
+}
+.treeCircle{
+  background-color: #ebddc1;
+}
+.tree{
+  width: 51rpx;
+  height: 43rpx;
+}
+.treePoint{
+  background-color:#ebddc1;
+  box-shadow: 4rpx 4rpx 8rpx #eee6d6;
+  color: #fff;
+}
+.animalCircle{
+  background-color: #e0c8ed;
+}
+.animal{
+  width: 48rpx;
+  height: 39rpx;
+}
+.animalPoint{
+  background-color:#e0c8ed;
+  box-shadow: 4rpx 4rpx 8rpx #e7cef5;
+  color: #fff;
+}
+.carCircle{
+  background-color: #dbe2b6;
+}
+.car{
+  width: 51rpx;
+  height: 40rpx;
+}
+.carPoint{
+  background-color:#dbe2b6;
+  box-shadow: 4rpx 4rpx 8rpx #d6dbbb;
+  color: #fff;
+}
+.currencyCircle{
+  background-color: #b3c8e5;
+}
+.currency{
+  width: 48rpx;
+  height: 40rpx;
+}
+.currencyPoint{
+  background-color:#b3c8e5;
+  box-shadow: 4rpx 4rpx 8rpx #c9d8ec;
+  color: #fff;
+}
+.active{
+  background-color: #fff;
+}
+.btnBox{
+  width: 660rpx;
+  margin: 90rpx auto 0;
+}
+.goCameraBtn{
+  width: 660rpx;
+  height: 80rpx;
+  color: #fff;
+  background-color: #2fc4b2;
+  font-size: 32rpx;
+  text-align: center;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+}
+.thanks{
+  width: 660rpx;
+  margin:0;
+  margin-top: 10rpx;
+  font-size: 22rpx;
+  padding-left: 30rpx;
+}

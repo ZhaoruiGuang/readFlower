@@ -1,0 +1,4 @@
+node_modules/
+manifest.json
+package-lock.json
+read_flower_server/node_modules/

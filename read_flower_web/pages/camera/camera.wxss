@@ -1,0 +1,43 @@
+.content{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+    background-color: #000;
+}
+.deviceCamera{
+    display: block;
+    width: calc(100% - 50rpx);
+    margin: 20rpx auto;
+}
+.btnIcon{
+    display: block;
+    width:120rpx;
+    height: 120rpx;
+    margin:60rpx auto 0;
+}
+.optionBtnBox{
+    margin-top: 70rpx;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.btn{
+  width: 160rpx;
+  height: 60rpx;
+  font-size: 28rpx;
+  line-height: 60rpx;
+  text-align: center;
+  border-radius: 30rpx;
+}
+.backBtn{
+  color: #666666;
+  background-color: #fff;
+  margin-right: 60rpx;
+}
+.confirmBtn{
+  color: #fff;
+  background-color: #2fc4b2;
+}

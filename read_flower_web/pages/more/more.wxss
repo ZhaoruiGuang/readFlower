@@ -1,0 +1,22 @@
+.title {
+    font-size: 48rpx;
+    text-align: center;
+    margin-top: 40rpx;
+    padding: 0 40rpx;
+    color: #333;
+}
+
+.baikeImg {
+    display: block;
+    margin: 0 auto;
+	border-radius: 5rpx;
+	margin-top: 15rpx;
+}
+
+.description {
+    font-size: 36rpx;
+    text-indent: 2em;
+    margin: 40rpx 0 60rpx;
+    padding: 0 40rpx;
+    color: #666;
+}

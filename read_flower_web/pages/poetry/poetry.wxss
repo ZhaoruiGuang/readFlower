@@ -1,0 +1,24 @@
+.content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20rpx 0 50rpx;
+    box-sizing: border-box;
+}
+.img{
+	border-radius: 5rpx;
+}
+.title{
+    font-size: 36rpx;
+    line-height: 90rpx;
+}
+.poetry{
+    font-size: 28rpx;
+    line-height: 50rpx;
+    color: dimgray;
+}
+.paragraph2{
+    margin-top: 20rpx;
+}

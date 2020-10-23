@@ -1,0 +1,47 @@
+<view class="container">
+    <view class="userinfo">
+        <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+        <block wx:else>
+            <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+            <text class="userinfo-nickname">Hello {{userInfo.nickName}}！</text>
+        </block>
+    </view>
+    <view class='tip'>请先选择您要识别物品的类别，然后拍照！</view>
+    <view class='pointBox'>
+      <view class="points {{tabIndex == 0 && index == 0 ? 'logoPoint' : tabIndex == 1 && index == 1 ? 'fruitPoint' : tabIndex == 2 && index == 2 ? 'treePoint' : tabIndex == 3 && index == 3 ? 'animalPoint' : tabIndex == 4 && index == 4 ? 'carPoint' : tabIndex == 5 && index == 5 ? 'currencyPoint' : ''}}" wx:for="{{typeList}}" wx:key="index">
+        <view class="pointIn" data-num="{{index}}" bindtap="itemTab">
+          <view class="typeCircle {{item.name}}Circle {{tabIndex == index ? 'active':''}}">
+            <block wx:if="{{index == 0}}">
+              <image class='logo' src='../images/logo2.png' wx:if="{{tabIndex == index}}"></image>
+              <image class='logo' src='../images/logo1.png' wx:else></image>
+            </block>
+            <block wx:if="{{index == 1 }}">
+              <image class='fruit' src='../images/fruit2.png' wx:if="{{tabIndex == index}}"></image>
+              <image class='fruit' src='../images/fruit1.png' wx:else></image>
+            </block>
+            <block wx:if="{{index == 2 }}">
+              <image class='tree' src='../images/tree2.png' wx:if="{{tabIndex == index}}"></image>
+              <image class='tree' src='../images/tree1.png' wx:else></image>
+            </block>
+            <block wx:if="{{index == 3 }}">
+              <image class='animal' src='../images/animal2.png' wx:if="{{tabIndex == index}}"></image>
+              <image class='animal' src='../images/animal1.png' wx:else></image>
+            </block>
+            <block wx:if="{{index == 4 }}">
+              <image class='car' src='../images/car2.png' wx:if="{{tabIndex == index}}"></image>
+              <image class='car' src='../images/car1.png' wx:else></image>
+            </block>
+            <block wx:if="{{index == 5 }}">
+              <image class='currency' src='../images/currency2.png' wx:if="{{tabIndex == index}}"></image>
+              <image class='currency' src='../images/currency1.png' wx:else></image>
+            </block>
+          </view>
+          <text class='typeWord'>{{item.label}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="btnBox">
+      <view class="goCameraBtn" bindtap="showCamera">去拍照</view>
+      <view class='tip thanks'>特别鸣谢：可可西里科技有限责任公司首席UI设计师-王琛鹏</view>
+    </view>
+</view>

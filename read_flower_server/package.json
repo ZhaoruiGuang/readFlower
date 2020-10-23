@@ -1,0 +1,23 @@
+{
+  "name": "read_flower_server",
+  "version": "1.0.0",
+  "description": "this is the server for my wx",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zhaoruiguang",
+  "license": "ISC",
+  "devDependencies": {
+    "baidu-aip-sdk": "^2.4.4",
+    "express": "^4.16.3",
+    "formidable": "^1.2.1",
+    "fs": "0.0.1-security",
+    "https": "^1.0.0",
+    "multer": "^1.3.1",
+    "path": "^0.12.7"
+  },
+  "dependencies": {
+    "http": "0.0.0"
+  }
+}

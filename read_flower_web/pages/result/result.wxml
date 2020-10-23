@@ -1,0 +1,33 @@
+<view class="container">
+  <view class="resultTopBox">
+    <scroll-view class="topImgBox" scroll-y scroll-top="{{imgScrollTop}}">
+      <image class='topImg' src="{{imgInfo.imgSrc}}" mode="widthFix" bindload="imgLoad"></image>
+    </scroll-view>
+    <view class="topWordBox" wx:if="{{!isCurrency}}">
+      <text class="text">结果：{{canRead ? imgInfo.result[0].name :'未识别'}}</text>
+      <text class="text" wx:if="{{canRead}}">相似度：{{imgInfo.result[0].score}}%</text>
+    </view>
+	<view class="topWordBox" wx:else>
+      <text class="text">货币代码：{{imgInfo.result[0].currencyCode ? imgInfo.result[0].currencyCode :'未识别'}}</text>
+      <text class="text">货币面额：{{imgInfo.result[0].currencyDenomination || '--'}}</text>
+    </view>
+  </view>
+
+  <view class="resultDescrib" wx:if="{{canRead}}">
+    <view>确认过眼神，目测是:</view>
+    <view><text class="typeName">{{imgInfo.result[0].name}}！</text></view>
+  </view>
+  <view class="resultDescrib" wx:else>
+	<view wx:for="{{errTip}}">{{item}}</view>
+  </view>
+
+  <view class="otherPossibility" wx:if="{{canRead && imgInfo.result.length>1}}">
+    <text class="otherWord otherTitle">还有可能是：</text>
+    <text class="otherWord otherList"><block wx:for="{{imgInfo.result}}" wx:if="{{index != 0 }}">{{item.name + item.point}}</block></text>
+    <text class="clearfix"></text>
+  </view>
+  <view class="otherPossibility" wx:if="{{!canRead}}"><text class="otherWord" bindtap='seePoetry'>吟一首诗 >></text></view>
+
+  <view class="operateBtn seeMoreBtn" wx:if="{{canRead && imgInfo.result[0].baike_info&&imgInfo.result[0].baike_info.description}}" bindtap="seeMore">查看更多</view>
+  <view class="operateBtn backBtn" wx:else bindtap="backRetake">返回重拍</view>
+</view>

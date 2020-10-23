@@ -1,0 +1,76 @@
+.resultTopBox{
+  width: calc(100% - 50rpx);
+  margin:80rpx auto 0;
+  border-radius: 15rpx;
+  box-shadow: 10rpx 10rpx 25rpx #b9b9b9,-1rpx 10rpx 25rpx #b9b9b9;
+  overflow: auto;
+}
+.topImgBox{
+  width: 100%;
+  height: 410rpx;
+  overflow: auto;
+  border-radius: 15rpx;
+}
+.topImg{
+  display: block;
+  width: 100%;
+}
+.topWordBox{
+  line-height: 90rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+.text{
+  display: inline-block;
+  width: 50%;
+  padding-left: 20rpx;
+  box-sizing: border-box;
+}
+.resultDescrib{
+  box-sizing: border-box;
+  width: calc(100% - 50rpx);
+  margin: 60rpx auto 0;
+  font-size: 32rpx;
+  color: #333;
+  line-height: 42rpx;
+  padding: 0 20rpx;
+}
+.typeName{
+  font-size: 48rpx;
+  color: #ff3e3e;
+  font-weight: bold;
+  line-height: 60rpx;
+}
+.otherPossibility{
+  box-sizing: border-box;
+  width: calc(100% - 50rpx);
+  margin: 20rpx auto;
+  font-size: 24rpx;
+  color: #999999;
+  padding: 0 20rpx;
+}
+.otherWord{
+  display: inline-block;
+  float: left;
+}
+.otherTitle{
+  width: 150rpx;
+}
+.otherList{
+  width: calc(100% - 150rpx);
+}
+.clearfix{
+  clear: both;
+}
+.operateBtn{
+  width: 248rpx;
+  height: 80rpx;
+  font-size: 30rpx;
+  text-align: center;
+  color: #fff;
+  line-height: 80rpx;
+  background-color: #2fc4b2;
+  border-radius: 10rpx;
+  margin-top: 120rpx;
+  box-shadow: 4rpx 6rpx 10rpx #a3f3ea;
+}

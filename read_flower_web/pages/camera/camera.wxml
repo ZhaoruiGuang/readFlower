@@ -1,0 +1,19 @@
+<view class='content'>
+    <view wx:if="{{cameraState}}" class='cameraWin'>
+        <camera class='deviceCamera' 
+                device-position="back" 
+                flash="off" 
+                binderror="error" 
+                style='height:{{viewHeight}}px;'>
+        </camera>
+        <image wx:if="{{cameraBtnState}}" class='btnIcon' src="../images/btn.png" bindtap="nowTake"></image>
+        <canvas canvas-id="myCanvas"></canvas>
+    </view>
+    <view wx:else class='imgWin'>
+        <image mode="widthFix" src="{{imgSrc}}" class='deviceCamera previewImg' style='width:{{viewWidth}}px;height:{{viewHeight}}px;'></image>
+        <view class='optionBtnBox'>
+            <view class='btn backBtn' bindtap="reTake">重新拍摄</view>
+            <view class='btn confirmBtn' bindtap="submit">快速识别</view>
+        </view>
+    </view>
+</view> 
